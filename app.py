@@ -14,6 +14,12 @@ st.title("Carga la foto de tu candidato y lo analizo🤖🏞️")
 ke = st.text_input('Ingresa tu Clave')
 os.environ['OPENAI_API_KEY'] = ke
 
+# Load and display image
+try:
+    image = Image.open('EbNRvqnU0AUXtqP.jpg')
+    st.image(image, width=350)
+except Exception as e:
+    st.warning(f"No se pudo cargar la imagen: {e}")
 
 # Retrieve the OpenAI API Key from secrets
 api_key = os.environ['OPENAI_API_KEY']

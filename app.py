@@ -16,7 +16,7 @@ os.environ['OPENAI_API_KEY'] = ke
 
 # Load and display image
 try:
-    image = Image.open('EbNRvqnU0AUXtqP.jpg')
+    image = Image.open('image fico.jpg')
     st.image(image, width=350)
 except Exception as e:
     st.warning(f"No se pudo cargar la imagen: {e}")
